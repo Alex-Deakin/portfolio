@@ -1,0 +1,13 @@
+/* Blog page styling */
+
+.blog-page {
+    padding: 0 20%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@media screen and (max-width: 800px) {
+    .blog-page {
+        padding: 0 5%;
+    }
+}

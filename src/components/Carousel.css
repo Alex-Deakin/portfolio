@@ -1,0 +1,32 @@
+/* Image carousel styling */
+
+.carousel {
+    overscroll-behavior-y: contain;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 500px;
+    user-select: none;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+}
+
+.carousel > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    cursor: pointer;
+}
+
+.carousel > div > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    box-shadow: 0 15px 20px -16px rgba(0, 0, 0, 0.3);
+}

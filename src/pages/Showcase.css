@@ -1,0 +1,54 @@
+/* Showecase page styling */
+
+.showcase-page {
+    padding: 0 20% 16px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card {
+    display: flex;
+    flex-flow: row nowrap;
+    box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 0.3);
+}
+
+.client-wrapper > .card:not(:first-child) {
+    margin-top: 16px;
+}
+
+.card .carousel {
+    margin: 8px;
+    border: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+.card .project-details {
+    padding: 0 8px;
+}
+
+@media screen and (max-width: 1200px) {
+    .showcase-page {
+        padding: 0 10% 16px;
+    }
+
+    .card {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .showcase-page {
+        padding: 0 5% 16px;
+    }
+
+    .card .carousel {
+        width: 100%;
+        height: 47.5vw;
+        margin: 0;
+    }
+
+    .card .project-details {
+        padding: 0 16px;
+    }
+}

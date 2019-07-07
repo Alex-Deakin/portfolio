@@ -1,0 +1,47 @@
+/* Generic styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Segoe UI", "Roboto", "Ubuntu", sans-serif;
+  color: #222;
+  background-color: #fcfcfc;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.25em 0;
+  color: #005C97;
+  background: linear-gradient(#005C97, #363795);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a,
+a:visited {
+  color: #005C97;
+  font-weight: 500;
+}
+
+p {
+  margin: 0.75em 0;
+}
+
+ul {
+  margin: .6em 0;
+}
+
+.secondary-text {
+  color: #888;
+  font-style: italic;
+}
